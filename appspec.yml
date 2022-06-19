@@ -4,7 +4,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: plan-a-task-prod
+        TaskDefinition: "arn:aws:ecs:eu-central-1:642580869947:task-definition/plan-a-task-prod:6"
         LoadBalancerInfo:
           ContainerName: "plan-a-container-prod"
           ContainerPort: 80
