@@ -1,6 +1,6 @@
 [
   {
-    "name": "${task_definition_name}",
+    "name": "plan-a-task-prod",
     "image": "<IMAGE1_NAME>",
     "essential": true,
     "portMappings": [{
