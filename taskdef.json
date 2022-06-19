@@ -11,9 +11,9 @@
     "logConfiguration": {
       "logDriver": "awslogs",
       "options": {
-        "awslogs-group": "plan-a-task-prod",
+        "awslogs-group": "/ecs/plan-a-task-prod",
         "awslogs-region": "eu-central-1",
-        "awslogs-stream-prefix": "plan-a-task-prod"
+        "awslogs-stream-prefix": "ecs"
       }
     }
   }
