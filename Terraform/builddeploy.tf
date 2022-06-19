@@ -104,8 +104,8 @@ resource "aws_codepipeline" "ecs_pipeline" {
     action {
       name             = "FetchCode"
       category         = "Source"
-      owner            = "ThirdParty"
-      provider         = "GitHub"
+      owner            = "AWS"
+      provider         = "CodeCommit"
       version          = "1"
       run_order        = 1
       output_artifacts = ["SourceArtifact"]
