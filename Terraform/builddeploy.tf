@@ -1,3 +1,8 @@
+resource "aws_s3_bucket" "codepipeline_bucket" {
+  bucket = join("-", [lower(var.environment), "bucket-plana"])
+  acl    = "private"
+}
+
 resource "aws_iam_role" "codepipeline_role" {
   name = join("-", [var.environment, "codepipeline"])
 
@@ -79,6 +84,10 @@ resource "aws_iam_role_policy" "codepipeline_policy" {
 EOF
 }
 
+# resource "aws_codestarconnections_connection" "rraisal" {
+#   name          = "rraisal-connection"
+#   provider_type = "GitHub"
+# }
 
 resource "aws_codepipeline" "ecs_pipeline" {
   name     = join("-", [var.environment, "pipeline"])
@@ -95,8 +104,8 @@ resource "aws_codepipeline" "ecs_pipeline" {
     action {
       name             = "FetchCode"
       category         = "Source"
-      owner            = "AWS"
-      provider         = "CodeCommit"
+      owner            = "ThirdParty"
+      provider         = "GitHub"
       version          = "1"
       run_order        = 1
       output_artifacts = ["SourceArtifact"]
