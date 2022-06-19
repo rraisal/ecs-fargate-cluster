@@ -1,7 +1,7 @@
 [
   {
     "name": "plan-a-task-prod",
-    "image": "IMAGE1_NAME",
+    "image": "<IMAGE1_NAME>",
     "essential": true,
     "portMappings": [{
       "protocol": "tcp",
