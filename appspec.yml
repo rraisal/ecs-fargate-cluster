@@ -1,0 +1,10 @@
+version: 0.0
+ 
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: plan-a-task-prod
+        LoadBalancerInfo:
+          ContainerName: "plan-a-container-prod"
+          ContainerPort: 80
