@@ -1,8 +1,8 @@
-Architectural Diagram
+**Architectural Diagram**
 
 ![alt text](https://github.com/rraisal/ecs-fargate-cluster/blob/main/diagram/planA-ecs.jpg)
 
-Components:
+**Components:**
 
 - VPC CIDR : 10.0.0.0/24
 - Private subnets : "10.0.0.0/28", "10.0.0.16/28", "10.0.0.32/28"
