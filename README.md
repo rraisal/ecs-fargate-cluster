@@ -15,3 +15,19 @@ Components:
 - CodeBuild - to build docker images
 - CodeDeploy - for ECS deployment.
 - ECR - to store docker images.
+
+
+Installation
+
+Clone repo and cd Terraform
+
+terraform plan
+
+terraform apply
+
+
+var.aws-access-key
+  Enter a value: <ENTER AWS ACCESS KEY>
+
+var.aws-secret-key
+  Enter a value: <ENTER AWS SECRET KEY>
