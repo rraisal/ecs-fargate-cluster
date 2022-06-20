@@ -1,6 +1,6 @@
 Architectural Diagram
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/rraisal/ecs-fargate-cluster/blob/main/diagram/planA-ecs.jpg)
 
 Components:
 
