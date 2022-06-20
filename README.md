@@ -17,7 +17,7 @@ Components:
 - ECR - to store docker images.
 
 
-Installation
+**Installation**
 
 Clone repo and cd Terraform
 
