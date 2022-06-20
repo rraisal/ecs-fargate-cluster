@@ -31,3 +31,5 @@ var.aws-access-key
 
 var.aws-secret-key
   Enter a value: ENTER AWS SECRET KEY
+
+(Verified with Terraform v1.1.7)
