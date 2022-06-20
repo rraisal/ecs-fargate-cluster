@@ -27,7 +27,7 @@ terraform apply
 
 
 var.aws-access-key
-  Enter a value: <ENTER AWS ACCESS KEY>
+  Enter a value: ENTER AWS ACCESS KEY
 
 var.aws-secret-key
-  Enter a value: <ENTER AWS SECRET KEY>
+  Enter a value: ENTER AWS SECRET KEY
